@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-  	"format": "prettier --write ."
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
@@ -24,6 +24,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "prettier": "^3.8.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
