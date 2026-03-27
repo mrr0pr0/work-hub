@@ -15,7 +15,7 @@ function toYearMonth(d: Date) {
 }
 
 function money(n: number) {
-	return n.toLocaleString(undefined, { style: 'currency', currency: 'USD' });
+	return n.toLocaleString('nb-NO', { style: 'currency', currency: 'NOK' });
 }
 
 export default async function PaymentsPage() {
@@ -143,7 +143,7 @@ export default async function PaymentsPage() {
 								<div>
 									<div className="text-xs text-zinc-400">Rate</div>
 									<div className="font-medium">
-										${Number(r.hourly_rate).toFixed(2)}/hr
+										{Number(r.hourly_rate).toFixed(2)} kr/hr
 									</div>
 								</div>
 								<div>
